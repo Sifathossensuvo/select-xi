@@ -1,0 +1,101 @@
+[
+  {
+    "id": 1,
+    "name": "Virat Kohli",
+    "country": "India",
+    "role": "Batsman",
+    "battingStyle": "Right-Hand-Bat",
+    "bowlingStyle": "Right-Arm Medium",
+    "price": 15000,
+    "rating": 98,
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRo2D9cFIVyOF_X1R-8Jmut0vdt8OA14a8EDBU7cP804bul-oEu2bOK33c&s=10"
+  },
+  {
+    "id": 2,
+    "name": "Rohit Sharma",
+    "country": "India",
+    "role": "Batsman",
+    "battingStyle": "Right-Hand-Bat",
+    "bowlingStyle": "Right-Arm Off Break",
+    "price": 14500,
+    "rating": 97,
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSsI17j6LHHnnj7cB9dEGKQ8vS_7L3bqbC62zeTIyGZRQ&s=10p"
+  },
+  {
+    "id": 3,
+    "name": "Babar Azam",
+    "country": "Pakistan",
+    "role": "Batsman",
+    "battingStyle": "Right-Hand-Bat",
+    "bowlingStyle": "Right-Arm Off Break",
+    "price": 14000,
+    "rating": 96,
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSp7IlHv3yx_quy0etAHBMm2qXeesZTxiUZXwG1SAOTkw&s=10"
+  },
+  {
+    "id": 4,
+    "name": "Jos Buttler",
+    "country": "England",
+    "role": "Wicket-Keeper",
+    "battingStyle": "Right-Hand-Bat",
+    "bowlingStyle": "-",
+    "price": 13500,
+    "rating": 95,
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLGxV127FKLYINnPaA3THLdoPNWNa4QglE-gPY8t6Ndw39mHaaPBjUOgAw&s=10"
+  },
+  {
+    "id": 5,
+    "name": "Ben Stokes",
+    "country": "England",
+    "role": "All-Rounder",
+    "battingStyle": "Left-Hand-Bat",
+    "bowlingStyle": "Right-Arm Fast",
+    "price": 16000,
+    "rating": 99,
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSs-KQjXNTvVNWKPI0KC7DtszKRVG--EXMCkxvuJeHuUA&s=10"
+  },
+  {
+    "id": 6,
+    "name": "Shakib Al Hasan",
+    "country": "Bangladesh",
+    "role": "All-Rounder",
+    "battingStyle": "Left-Hand-Bat",
+    "bowlingStyle": "Left-Arm Orthodox",
+    "price": 13000,
+    "rating": 95,
+    "image": "https://i.ibb.co.com/tTTX4z8w/Chat-GPT-Image-Jul-6-2026-10-36-10-PM.png"
+  },
+  {
+    "id": 7,
+    "name": "Rashid Khan",
+    "country": "Afghanistan",
+    "role": "Bowler",
+    "battingStyle": "Right-Hand-Bat",
+    "bowlingStyle": "Right-Arm Leg Spin",
+    "price": 14800,
+    "rating": 97,
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQptzeLLxEIUOPFJoKAiRtyMkxF1MgFFmDSAIZ2R5f6WQ&s=10"
+  },
+  {
+    "id": 8,
+    "name": "Kane Williamson",
+    "country": "New Zealand",
+    "role": "Batsman",
+    "battingStyle": "Right-Hand-Bat",
+    "bowlingStyle": "Right-Arm Off Break",
+    "price": 13800,
+    "rating": 95,
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTML9jz8pM1dnOa0TR6EiItYpnvdKUfVOXMn-WspirpRhHGmtWR_SM2UkAW&s=10"
+  },
+  {
+    "id": 9,
+    "name": "Mitchell Starc",
+    "country": "Australia",
+    "role": "Bowler",
+    "battingStyle": "Left-Hand-Bat",
+    "bowlingStyle": "Left-Arm Fast",
+    "price": 14200,
+    "rating": 96,
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvEH4Yc66zP5Mr27QMcTXn-mSLTsGJuWKk4GxO4sezoA&s=10"
+  }
+]
