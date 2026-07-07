@@ -2,7 +2,7 @@
 
 ## Project Name: Dream Players
 
-## live Link:
+## live Link: https://coherent-children.surge.sh/
 
 ## 🌸 Assalamu Alaikum,
 
@@ -23,7 +23,7 @@ I sincerely hope you enjoy reviewing my work. Thank you for your valuable time, 
 3: Avilable and Selected tab button
 
 ## My extra work..
-Additionally, I made a few UI improvements based on my own preferences. I centered the navigation menu items because I felt they looked more balanced and visually appealing. I also created a default message and a button for the **Selected** tab, so that users see a meaningful empty state when no players have been selected.
+I also created a default message and a button for the **Selected** tab, so that users see a meaningful empty state when no players have been selected.
 
 ## Important
 At the moment, I can no longer find the private GitHub repository that was provided for the assignment. I also posted about this issue on the Help Desk, where an admin advised me to complete the assignment in my own GitHub repository instead.
