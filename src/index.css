@@ -1,9 +1,11 @@
 @import "tailwindcss";
 @plugin "daisyui";
-@import url('https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap');
 
-.sora- {
+.sora-family {
   font-family: "Sora", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 100 800;
+  font-style: normal;
 }
 
 

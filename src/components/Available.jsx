@@ -33,9 +33,7 @@ const Available = ({ coin, setCoin }) => {
     }
 
     setCoin((prev) => prev - player.price);
-
     setSelectedPlayers([...selectedPlayers, player]);
-
     toast.success(`${player.name} added successfully`);
   };
 
@@ -52,72 +50,71 @@ const Available = ({ coin, setCoin }) => {
   };
 
   return (
-    <section className="max-w-[1320px] mx-auto my-20">
+    <section className="max-w-[1320px] mx-auto my-20 px-4">
 
-      <div className="flex justify-between items-center mb-10">
+      <div className="flex flex-col md:flex-row md:justify-between md:items-center gap-5 mb-10">
 
-        <h2 className="text-3xl font-bold">
-
+        <h2 className="text-2xl md:text-3xl font-bold">
           {activeTab === "available"
             ? "Available Players"
             : `Selected Players (${selectedPlayers.length}/6)`}
-
         </h2>
 
-        <div className="join">
+        <div className="join w-full md:w-auto">
 
           <button
             onClick={() => setActiveTab("available")}
-            className={`join-item btn px-8 ${activeTab === "available"
+            className={`join-item btn flex-1 md:flex-none ${
+              activeTab === "available"
                 ? "bg-[#E7FE29] text-black"
                 : "bg-white"
-              }`}
+            }`}
           >
             Available
           </button>
 
           <button
             onClick={() => setActiveTab("selected")}
-            className={`join-item btn px-8 ${activeTab === "selected"
+            className={`join-item btn flex-1 md:flex-none ${
+              activeTab === "selected"
                 ? "bg-[#E7FE29] text-black"
                 : "bg-white"
-              }`}
+            }`}
           >
             Selected ({selectedPlayers.length})
           </button>
 
         </div>
-
       </div>
 
       {activeTab === "available" && (
 
-        <div className="grid lg:grid-cols-3 md:grid-cols-2 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6">
 
           {players.map((player) => (
 
             <div
               key={player.id}
-              className="border rounded-2xl p-6"
+              className="border-2 border-gray-200 rounded-2xl p-5"
             >
 
               <img
                 src={player.image}
                 alt={player.name}
-                className="w-full h-64 rounded-xl object-cover"
+                className="w-full h-56 md:h-64 rounded-xl object-cover"
               />
 
-              <div className="flex items-center gap-3 mt-6">
+              <div className="flex items-center gap-3 mt-5">
 
-                <FaUserAlt size={18} />
+                <FaUserAlt />
 
-                <h2 className="text-2xl font-bold">
+                <h2 className="text-xl md:text-2xl font-bold">
                   {player.name}
                 </h2>
 
               </div>
 
-              <div className="flex justify-between items-center mt-5">
+              <div className="flex justify-between items-center mt-4">
 
                 <div className="flex items-center gap-2 text-gray-500">
 
@@ -127,31 +124,31 @@ const Available = ({ coin, setCoin }) => {
 
                 </div>
 
-                <span className="badge badge-outline">
+                <span className="badge bg-gray-100 border-none">
                   {player.role}
                 </span>
 
               </div>
 
-              <hr className="my-6" />
+              <hr className="my-5" />
 
-              <h3 className="font-bold mb-4">
+              <h3 className="font-bold mb-3">
                 Rating
               </h3>
 
-              <div className="flex justify-between">
+              <div className="flex justify-between gap-2 text-sm md:text-base">
 
                 <p className="font-semibold">
                   {player.battingStyle}
                 </p>
 
-                <p className="text-gray-400">
+                <p className="text-gray-400 text-right">
                   {player.bowlingStyle}
                 </p>
 
               </div>
 
-              <div className="flex justify-between items-center mt-8">
+              <div className="flex flex-col sm:flex-row sm:justify-between sm:items-center gap-4 mt-6">
 
                 <h2 className="font-bold">
                   Price: ${player.price}
@@ -159,7 +156,7 @@ const Available = ({ coin, setCoin }) => {
 
                 <button
                   onClick={() => handleChoosePlayer(player)}
-                  className="btn btn-outline"
+                  className="btn btn-outline border-2 border-gray-200 w-full sm:w-auto"
                 >
                   Choose Player
                 </button>
@@ -173,10 +170,11 @@ const Available = ({ coin, setCoin }) => {
         </div>
 
       )}
-      {activeTab === "selected" && (
+            {activeTab === "selected" && (
         <div>
 
           {selectedPlayers.length === 0 ? (
+
             <div className="text-center py-20">
 
               <h2 className="text-3xl font-bold">
@@ -184,7 +182,7 @@ const Available = ({ coin, setCoin }) => {
               </h2>
 
               <p className="text-gray-500 mt-3">
-                please select a players
+                Please select a player
               </p>
 
               <button
@@ -195,37 +193,40 @@ const Available = ({ coin, setCoin }) => {
               </button>
 
             </div>
+
           ) : (
+
             <>
+
               <div className="space-y-5">
 
                 {selectedPlayers.map((player) => (
 
                   <div
                     key={player.id}
-                    className="border rounded-2xl p-5 flex justify-between items-center"
+                    className="border rounded-2xl p-5 flex flex-col sm:flex-row sm:justify-between sm:items-center gap-5"
                   >
 
-                    <div className="flex items-center gap-5">
+                    <div className="flex flex-col sm:flex-row items-center gap-5 flex-1">
 
                       <img
                         src={player.image}
                         alt={player.name}
-                        className="w-24 h-24 rounded-xl object-cover"
+                        className="w-20 h-20 md:w-24 md:h-24 rounded-xl object-cover"
                       />
 
-                      <div>
+                      <div className="text-center sm:text-left">
 
-                        <h2 className="text-2xl font-bold">
+                        <h2 className="text-xl md:text-2xl font-bold">
                           {player.name}
                         </h2>
 
-                        <p className="text-gray-500 mt-2">
+                        <p className="text-gray-500 mt-1">
                           {player.role}
                         </p>
 
                         <p className="text-gray-500">
-                          Price : ${player.price}
+                          Price: ${player.price}
                         </p>
 
                       </div>
@@ -234,9 +235,9 @@ const Available = ({ coin, setCoin }) => {
 
                     <button
                       onClick={() => handleRemovePlayer(player.id)}
-                      className="btn btn-ghost text-red-500"
+                      className="btn btn-circle btn-ghost text-red-500 self-end sm:self-center"
                     >
-                      <MdDelete size={28} />
+                      <MdDelete size={24} />
                     </button>
 
                   </div>
@@ -261,6 +262,7 @@ const Available = ({ coin, setCoin }) => {
               </div>
 
             </>
+
           )}
 
         </div>

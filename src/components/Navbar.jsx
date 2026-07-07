@@ -8,7 +8,7 @@ const Navbar = ({ coin }) => {
         </div>
 
         <div className="navbar-center hidden lg:flex">
-          <ul className="flex items-center gap-10 text-gray-500 text-sm font-medium">
+          <ul className="flex items-center gap-10 text-gray-500 text-xl font-medium">
             <li className="cursor-pointer hover:text-black">Home</li>
             <li className="cursor-pointer hover:text-black">Fixture</li>
             <li className="cursor-pointer hover:text-black">Teams</li>
